@@ -1,0 +1,19 @@
+@use 'variaveis' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: v.$font-base;
+  background: v.$cinza-bege;
+  color: v.$texto;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }

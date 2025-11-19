@@ -1,0 +1,27 @@
+@use 'variaveis' as v;
+
+@mixin container($pad: v.$espacamento) {
+  max-width: v.$container-max;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ($pad / 2);
+  padding-right: ($pad / 2);
+}
+
+@mixin button-base($bg: v.$rosa, $color: #fff) {
+  display: inline-block;
+  background: $bg;
+  color: $color;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: v.$radius / 1.5;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.25s ease, transform 0.12s ease;
+
+  &:hover { transform: translateY(-2px); }
+}
+
+@function half($value) {
+  @return $value / 2;
+}

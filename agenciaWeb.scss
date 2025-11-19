@@ -1,0 +1,23 @@
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
+
+/* Responsividade */
+@media (max-width: variaveis.$breakpoint-sm) {
+  .nav__list {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .header__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
